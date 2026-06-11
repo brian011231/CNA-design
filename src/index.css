@@ -1,0 +1,17 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Pretendard", ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+
+body {
+  background-color: #0a0a0a;
+  color: #f3f4f6;
+  font-family: var(--font-sans);
+  overflow-x: hidden;
+}
+
+/* Custom Utilities for line breaks handling */
+.whitespace-pre-line {
+  white-space: pre-line;
+}
