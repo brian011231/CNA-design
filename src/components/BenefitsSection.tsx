@@ -4,66 +4,63 @@ export function BenefitsSection() {
   const { benefits: data } = config;
 
   return (
-    <section className="py-16 md:py-32 px-4 md:px-6 border-t border-white/5 bg-[#050505]">
-      <div className="container max-w-6xl mx-auto space-y-16 md:space-y-32">
+    <section className="py-24 px-6 bg-[#FCFBF9] text-gray-900 border-b border-gray-200/60 select-none">
+      <div className="container max-w-sm mx-auto space-y-16">
         
-        {/* Headings */}
-        <div className="text-center space-y-4 md:space-y-6">
-          <p className="text-[#E50914] font-bold tracking-widest uppercase text-xs md:text-sm">
+        {/* Headings with premium spacing */}
+        <div className="text-center space-y-4">
+          <p className="text-[#E50914] font-black tracking-widest uppercase text-xs">
             {data.header}
           </p>
           <h2 
-            className="text-4xl md:text-7xl font-black text-white leading-tight break-keep"
+            className="text-3xl font-black text-gray-950 leading-snug tracking-tight break-keep"
             dangerouslySetInnerHTML={{ __html: data.title }}
           />
         </div>
 
-        <div className="space-y-20 md:space-y-32">
-          {data.items.map((item, idx) => (
-             <div key={item.id} className={`grid lg:grid-cols-2 gap-10 md:gap-16 items-center ${idx % 2 !== 0 ? 'lg:flex-row-reverse' : ''}`}>
-                {/* Text Content */}
-                <div className={`space-y-6 md:space-y-8 ${idx % 2 !== 0 ? 'lg:order-2' : ''}`}>
-                   <div className="flex items-center space-x-3 md:space-x-4">
-                      <span className="text-5xl md:text-6xl font-black text-transparent bg-clip-text bg-gradient-to-b from-gray-700 to-transparent">
-                         {item.number}
-                      </span>
-                      <h3 className="text-3xl md:text-4xl font-bold text-white">
-                         {item.short}
-                      </h3>
-                   </div>
-                   
-                   {/* If it has before/after (Item 1) */}
-                   {item.beforeTitle ? (
-                     <div className="space-y-4 md:space-y-6">
-                        <div className="bg-[#111] p-5 md:p-6 rounded-2xl border border-gray-800">
-                           <h4 className="text-gray-500 font-bold mb-1 md:mb-2">{item.beforeTitle}</h4>
-                           <p className="text-sm md:text-base text-gray-400 break-keep">{item.beforeDesc}</p>
-                        </div>
-                        <div className="bg-gradient-to-r from-red-900/20 to-[#111] p-5 md:p-6 rounded-2xl border border-[#E50914]/30">
-                           <h4 className="text-[#E50914] font-bold mb-1 md:mb-2">{item.afterTitle}</h4>
-                           <p className="text-sm md:text-base text-white whitespace-pre-line leading-relaxed break-keep">{item.afterDesc}</p>
-                        </div>
-                     </div>
-                   ) : (
-                     <div 
-                        className="text-base md:text-lg text-gray-400 font-light leading-relaxed whitespace-pre-line break-keep"
-                        dangerouslySetInnerHTML={{ __html: item.desc || "" }}
-                     />
-                   )}
+        {/* Benefits Stack: Very generous mobile-first spacing */}
+        <div className="space-y-20">
+          {data.items.map((item) => (
+             <div key={item.id} className="space-y-8 border-b border-gray-100 pb-12 last:border-0 last:pb-0">
+                
+                {/* Header / Number Badge */}
+                <div className="flex items-center space-x-4">
+                   <span className="text-5xl font-black text-transparent bg-clip-text bg-gradient-to-b from-[#E50914] to-red-400">
+                      {item.number}
+                   </span>
+                   <h3 className="text-[22px] font-black text-gray-950 tracking-tight">
+                      {item.short}
+                   </h3>
+                </div>
+                
+                {/* Visual Anchor: Refined aspect ratio for modern mobile viewport */}
+                <div className="relative aspect-[16/10] rounded-[2rem] overflow-hidden bg-gray-100 border border-gray-200/50 shadow-md">
+                   <img 
+                     src={item.image} 
+                     alt={item.short} 
+                     className="w-full h-full object-cover grayscale mix-blend-luminosity hover:mix-blend-normal transition-all duration-700" 
+                     referrerPolicy="no-referrer"
+                   />
                 </div>
 
-                {/* Image Content */}
-                <div className={`relative ${idx % 2 !== 0 ? 'lg:order-1' : ''}`}>
-                   <div className="absolute inset-0 bg-[#E50914] rounded-2xl md:rounded-[2rem] translate-x-3 translate-y-3 md:translate-x-4 md:translate-y-4 opacity-20"></div>
-                   <div className="relative aspect-square md:aspect-[4/3] rounded-2xl md:rounded-[2rem] overflow-hidden bg-[#111] border border-white/10">
-                      <img 
-                        src={item.image} 
-                        alt={item.short} 
-                        className="w-full h-full object-cover mix-blend-luminosity hover:mix-blend-normal transition-all duration-700" 
-                        referrerPolicy="no-referrer"
-                      />
-                   </div>
-                </div>
+                {/* Content Block */}
+                {item.beforeTitle ? (
+                  <div className="space-y-4">
+                     <div className="bg-gray-50 p-6 rounded-[1.5rem] border border-gray-200/80">
+                        <h4 className="text-gray-500 font-extrabold text-xs uppercase tracking-wide mb-1">{item.beforeTitle}</h4>
+                        <p className="text-[15px] text-gray-700 leading-relaxed break-keep font-light">{item.beforeDesc}</p>
+                     </div>
+                     <div className="bg-red-50/70 p-6 rounded-[1.5rem] border border-[#E50914]/20 shadow-sm shadow-red-50/50">
+                        <h4 className="text-[#E50914] font-extrabold text-xs uppercase tracking-wide mb-1">{item.afterTitle}</h4>
+                        <p className="text-[16px] text-gray-950 leading-relaxed whitespace-pre-line break-keep font-semibold">{item.afterDesc}</p>
+                     </div>
+                  </div>
+                ) : (
+                  <div 
+                     className="text-[16px] text-gray-700 leading-relaxed font-light break-keep px-1 whitespace-pre-line space-y-4 [&_strong]:text-gray-950 [&_strong]:font-black"
+                     dangerouslySetInnerHTML={{ __html: item.desc || "" }}
+                  />
+                )}
              </div>
           ))}
         </div>

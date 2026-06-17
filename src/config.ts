@@ -52,7 +52,7 @@ export const config = {
     reasonSubtitleRaw: "<span class='text-white'>\"대화의 본질\"</span>을<br/><span class='text-gray-500'>모르기 때문입니다.</span>",
     reasonContent: "대부분의 사람들은 대화를 일종의 정답 맞히기 게임으로 생각합니다. 그래서 머릿속에선 계속 이런 대사가 돌아요.\n\n<span class='text-gray-300 italic block border-l-2 border-[#E50914] pl-4 my-4 bg-[#111] p-4'>\"이 상황에서 뭐라고 말해야 하지?\"\n\"이 말 하면 부담스러울까?\"</span>\n\n하지만 이렇게 정답만 찾으려고 하면 정작 중요한 것들을 전부 놓칩니다.\n<ul class='grid grid-cols-2 gap-2 text-gray-200 mt-4 mb-6 font-medium'><li>✓ 상대의 표정 변화</li><li>✓ 말 속도</li><li>✓ 호흡 리듬</li><li>✓ 감정의 미세한 떨림</li><li>✓ 분위기의 흐름</li></ul>\n이런 '상황 판단 신호'가 하나도 눈에 안 들어오는 거죠.\n\n그리고 결국...<br/><br/><strong class='text-[#E50914] text-xl bg-[#111] p-4 rounded-xl block border border-red-900/30'>외운 멘트는 금방 바닥나고,<br/>상황 틀어지면 머리가 하얘지고,<br/>자신감은 바닥까지 떨어지고...</strong>\n\n이게 바로 제가 말하는 대화의 요요현상입니다.",
     cnaStartTitle: "CNA는 바로 여기서 시작됩니다.",
-    cnaStartContent: "대화는 말빨이 좋다고 되는 게 아닙니다.\n멘트를 외운다고 해결되는 것도 아니고요.\n진짜 중요한 건 딱 하나예요.\n\n<strong class='text-2xl md:text-3xl text-white block my-8 border-l-4 border-[#E50914] pl-6 py-2 bg-gradient-to-r from-[#111] to-transparent'>\"상대의 감정·표정·신호를 해석하는 능력\"</strong>\n대화의 90%는 여기서 결정됩니다.\n\n쉽게 말하면 말을 '잘' 하는 사람이 아니라 말을 '읽는' 사람이 대화에 강합니다.\n\n그리고 이 능력은 재능이 아니라,\n<strong class='bg-[#E50914] text-white px-3 py-1 mx-1 rounded-sm text-2xl shadow-[0_0_20px_rgba(229,9,20,0.4)]'>훈련 가능한 기술</strong>입니다.",
+    cnaStartContent: "대화는 말빨이 좋다고 되는 게 아닙니다.\n멘트를 외운다고 해결되는 것도 아니고요.\n진짜 중요한 건 딱 하나예요.\n\n<strong class='text-[19px] text-gray-950 block my-8 border-l-[3px] border-[#E50914] pl-5 py-3 font-extrabold tracking-tight leading-relaxed bg-[#F8F9FA] border border-gray-200/60 rounded-xl shadow-sm'>“상대의 감정·표정·신호를 해석하는 능력”</strong>\n대화의 90%는 여기서 결정됩니다.\n\n쉽게 말하면 말을 '잘' 하는 사람이 아니라 말을 '읽는' 사람이 대화에 강합니다.\n\n그리고 이 능력은 재능이 아니라,\n<strong class='text-[#E50914] underline underline-offset-4 decoration-2 font-black text-lg'>훈련 가능한 기술</strong>입니다.",
     cnaCoreTitle: "그래서 CNA의 핵심은 '말투'가 아닙니다.",
     cnaCoreSubtitle: "당신이 그동안 한 번도 배워본 적 없는, 완전히 다른 차원입니다.",
     cnaCores: [
@@ -75,8 +75,8 @@ export const config = {
         icon: "Layers"
       }
     ],
-    relearnTitle: "\"걸음마부터 다시 시킨다\"",
-    relearnContent: "이 마음으로 알려드릴 겁니다.\n\n대화를 다시 배운다는 건 단순히 입에 넣을 문장을 외우는 게 아니라, 당신 전체 대화의 '감각'을 새로 만드는 작업이에요.\n\n지금까지 '정답'을 찾아 헤매다 실패했다면, 이번엔 제대로 배우면 됩니다.\n\n당신의 관계가 변하는 건,\n결국 <strong class='text-black bg-white px-3 md:px-4 py-2 rounded-lg text-xl md:text-3xl inline-block mt-4 shadow-lg break-keep'>대화의 감각이 바뀌는 순간</strong>입니다."
+    relearnTitle: "“걸음마부터 다시 시킨다”",
+    relearnContent: "이 마음으로 알려드릴 겁니다.\n\n대화를 다시 배운다는 건 단순히 입에 넣을 문장을 외우는 게 아니라, 당신 전체 대화의 '감각'을 새로 만드는 작업이에요.\n\n지금까지 '정답'을 찾아 헤매다 실패했다면, 이번엔 제대로 배우면 됩니다.\n\n당신의 관계가 변하는 건,\n결국 <strong class='text-[#E50914] border-b-2 border-[#E50914]/40 pb-1 font-black text-[20px] inline-block mt-4 tracking-tight break-keep'>대화의 감각이 바뀌는 순간</strong>입니다."
   },
   warning: {
     titleRaw: "이성과 접점이 아예 없는 사람은<br/><span class='text-[#E50914]'>절대 들을 수 없습니다</span>",
@@ -124,14 +124,14 @@ export const config = {
         id: 2,
         number: "02",
         short: "나만의 캐릭터",
-        desc: "대부분의 사람은 자기 말투나 캐릭터를 의도적으로 설계해본 경험이 없습니다.\n\nCNA 이후엔 말의 리듬, 제스처, 어휘 톤 등을 조합해서 <strong class='text-white text-xl'>자신만의 커뮤니케이션 스타일</strong>을 만들게 됩니다.\n\n이건 단순히 말을 잘하는 걸 넘어,\n<span class='text-gray-300 italic block my-6 border-l-4 border-[#E50914] pl-6 bg-[#111] py-4 rounded-r-lg'>\"저 사람 말하면 신뢰가 가..\"\n\"저 사람은 뭔가 계속 생각나\"</span>\n라는 인상으로 이어집니다.\n\n<strong class='text-[#E50914] text-lg'>다양한 페르소나를 설계할 수 있다면 다양한 매력을 가질 수 있게 됩니다.</strong>",
+        desc: "대부분의 사람은 자기 말투나 캐릭터를 의도적으로 설계해본 경험이 없습니다.\n\nCNA 이후엔 말의 리듬, 제스처, 어휘 톤 등을 조합해서 <strong class='text-gray-950 font-black border-b border-gray-200 pb-1 text-base'>자신만의 커뮤니케이션 스타일</strong>을 만들게 됩니다.\n\n이건 단순히 말을 잘하는 걸 넘어,\n<span class='text-black font-extrabold italic block my-6 border-l-[3px] border-[#E50914] pl-5 bg-[#FDF2F2] border-[1px] border-l-0 border-[#E50914]/10 py-4 pr-4 rounded-r-xl text-[16px] leading-relaxed'>\"저 사람 말하면 신뢰가 가..\"\n\"저 사람은 뭔가 계속 생각나\"</span>\n라는 인상으로 이어집니다.\n\n<strong class='text-[#E50914] text-base block mt-4 font-bold'>다양한 페르소나를 설계할 수 있다면 다양한 매력을 가질 수 있게 됩니다.</strong>",
         image: "https://images.unsplash.com/photo-1556761175-4b46a572b786?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
       },
       {
         id: 3,
         number: "03",
         short: "공감능력",
-        desc: "CNA는 단순한 화술이 아니라 <strong class='text-white text-xl'>'타인의 심리를 읽는 기술'</strong>에 가깝습니다.\n\n그래서 상대의 미묘한 표정, 호흡, 억양에서 감정 단서를 캐치하게 되고, 그에 맞는 리액션이나 말투로 맞춰 대화가 자연스러워지게 되죠.\n\n결과적으로 말이 부드럽고 센스 있게 들리는 이유가 바로 여기서 생깁니다.",
+        desc: "CNA는 단순한 화술이 아니라 <strong class='text-gray-950 font-black border-b border-gray-200 pb-1 text-base'>'타인의 심리를 읽는 기술'</strong>에 가깝습니다.\n\n그래서 상대의 미묘한 표정, 호흡, 억양에서 감정 단서를 캐치하게 되고, 그에 맞는 리액션이나 말투로 맞춰 대화가 자연스러워지게 되죠.\n\n결과적으로 말이 부드럽고 센스 있게 들리는 이유가 바로 여기서 생깁니다.",
         image: "https://images.unsplash.com/photo-1521737604893-d14cc237f11d?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
       }
     ]
@@ -157,7 +157,7 @@ export const config = {
     ],
     philosophyTitle: "외모지상주의",
     philosophyQuote: "\"잘생기고 키큰게 전부야..\"",
-    philosophyContent: "모두가 외모만 외치는 시대에 진정성 있는 언어의 권력을 갖추고 있는 자가 정말 희소하고 가치있는 것이 아닐까요?\n\n단순히 여자 잘 꼬시는 양아치가 아니라 <strong class='text-white'>남자가 봐도 진짜 '멋'있는 사람이 되는게 저희의 지향점이니까요.</strong>\n\n착하고 열심히 살아온 남성들이 조금이라도 더 특권을 누리고 살게 하고 싶어 시작한 일이 어느덧 수백명이 넘는 수강생을 책임지게 되었네요.\n\n<strong class='text-[#E50914] text-xl block mt-6'>내가 어떤 사람인지, 상대가 원하는게 무엇인지</strong>\n초보자는 수십년간 축적해온 자신의 관점을 완전히 포기하고 오로지 저의 관점을 받아들여야 합니다.",
+    philosophyContent: "모두가 외모만 외치는 시대에 진정성 있는 언어의 권력을 갖추고 있는 자가 정말 희소하고 가치있는 것이 아닐까요?\n\n단순히 여자 잘 꼬시는 양아치가 아니라 <strong class='text-gray-950 font-extrabold border-b border-gray-200 pb-0.5'>남자가 봐도 진짜 '멋'있는 사람이 되는게 저희의 지향점이니까요.</strong>\n\n착하고 열심히 살아온 남성들이 조금이라도 더 특권을 누리고 살게 하고 싶어 시작한 일이 어느덧 수백명이 넘는 수강생을 책임지게 되었네요.\n\n<strong class='text-[#E50914] text-lg block mt-6'>내가 어떤 사람인지, 상대가 원하는게 무엇인지</strong>\n초보자는 수십년간 축적해온 자신의 관점을 완전히 포기하고 오로지 저의 관점을 받아들여야 합니다.",
     philosophyWarning: "정말 변화가 간절하신 분들만 받겠습니다. 가격에 망설여지거나, 빡센 과제 수행 때문에 망설여지는 분들은 죄송하지만 <strong class='text-[#E50914] block mt-2 text-xl'>CNA의 대상이 아니십니다.</strong>",
     image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
   },

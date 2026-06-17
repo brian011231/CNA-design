@@ -13,9 +13,9 @@ export default function App() {
     <div className="bg-[#050505] min-h-screen selection:bg-[#E50914] selection:text-white font-sans text-gray-200">
       <HeroSection />
       <WarningSection />
+      <StorySection />
       <ProblemSolutionSection />
       <MissionsSection />
-      <StorySection />
       <BenefitsSection />
       <PromisesSection />
       <CurriculumSection />

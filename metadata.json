@@ -1,6 +1,6 @@
 {
-  "name": "",
-  "description": "",
+  "name": "Communication DNA",
+  "description": "CNA는 실전 적용 가능한 소셜 대화 스킬을 학습하고 실행하는 극강의 커뮤니케이션 프로그램이며, 모바일 최적화 및 프리미엄 소셜 브랜딩을 제공합니다.",
   "requestFramePermissions": [],
   "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
 }
